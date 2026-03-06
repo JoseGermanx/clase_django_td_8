@@ -21,7 +21,7 @@ class ProductAdmin(admin.ModelAdmin):
 
 
 class CustomUserAdmin(UserAdmin):
-    list_display = ('username', 'email')
+    list_display = ('username', 'email', 'first_name')
     search_fields = ('email',)
 
 admin.site.unregister(User)

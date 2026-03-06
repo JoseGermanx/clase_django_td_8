@@ -31,13 +31,14 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'jazzmin',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'tienda'
+    'tienda',
 ]
 
 MIDDLEWARE = [
@@ -116,3 +117,13 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
 
 STATIC_URL = 'static/'
+
+
+JAZZMIN_SETTINGS = {
+    "site_title": "Panel Admin",
+    "site_header": "Administración",
+    "site_brand": "Mi Sistema",
+    "welcome_sign": "Bienvenido al panel Biblioteca",
+    "site_logo": None,
+    "theme": "flatly",
+}
