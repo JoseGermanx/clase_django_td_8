@@ -14,3 +14,10 @@ class Producto(models.Model):
 class Imagen(models.Model):
     url = models.URLField()
     producto = models.ForeignKey(Producto, on_delete=models.CASCADE)
+
+
+class Documento(models.Model):
+    titulo = models.CharField(max_length=100)
+
+    def _str__(self):
+        return self.titulo

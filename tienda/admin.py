@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Producto, Imagen
+from .models import Producto, Imagen, Documento
 from django.contrib.auth.models import User
 from django.contrib.auth.admin import UserAdmin
 
@@ -28,3 +28,4 @@ admin.site.unregister(User)
 admin.site.register(User, CustomUserAdmin)
 admin.site.register(Producto, ProductAdmin)
 admin.site.register(Imagen)
+admin.site.register(Documento)
